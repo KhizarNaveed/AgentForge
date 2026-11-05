@@ -94,13 +94,30 @@ AgentForge/
 
 ## 🚀 How to Run This Project
 
-### 1. Clone the Repository
+### 🐳 Running with Docker (Recommended)
+Run the entire stack (FastAPI backend + Nginx React frontend) with a single command—no local Python or Node.js installation required:
+
+1. Copy `backend/.env.example` to `backend/.env` and fill in your API keys:
+   ```bash
+   cp backend/.env.example backend/.env
+   ```
+2. Build and start the containers:
+   ```bash
+   docker-compose up --build
+   ```
+3. Open `http://localhost:5173` in your browser (Backend API runs at `http://localhost:8000`).
+
+---
+
+### 💻 Local Development Setup
+
+#### 1. Clone the Repository
 ```bash
 git clone https://github.com/KhizarNaveed/AgentForge.git
 cd AgentForge
 ```
 
-### 2. Backend Setup
+#### 2. Backend Setup
 ```bash
 cd backend
 python -m venv .venv

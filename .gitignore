@@ -1,0 +1,21 @@
+# Dependencies
+node_modules/
+.venv/
+__pycache__/
+*.pyc
+dist/
+
+# Environment & Secrets
+.env
+api.txt
+
+# Internal AI Agent Files (DO NOT PUSH)
+memory-bank/
+DECISIONS.md
+CHANGELOG.md
+TODO.md
+ARCHITECTURE.md
+
+# OS
+.DS_Store
+
